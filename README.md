@@ -8,7 +8,7 @@ compile 'axeldjaha.library:sms:1.2'
 Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
 
         /**
-         * On crée une instance de ADSMS (Axel Djaha SMS) à laquelle on attache le message à envoyer,
+         * On crée une instance de ADSMS à laquelle on attache le message à envoyer,
          * le numéro du destinataire ainsi qu'un écouteur d'évènement (callback) qui nous notifie de la
          * réussite ou de l'échec de l'envoi du SMS
          */
