@@ -35,7 +35,7 @@ compile 'axeldjaha.library:sms:1.3'
 | newInstance(android.support.v7.app.AppCompatActivity activity) | Créer l'instance de ADSMS qui permettra d'envoyer un SMS |
 | bindMessage(java.lang.String message) | Définir le message à envoyer |
 | bindPhoneNumber(java.lang.String phoneNumber) | Définir le numéro destinataire du SMS à envoyer |
-| bindListener(ADSMSListener listener) | Définir un écouteur d'évènement pour l'envoi du SMS |
+| bindListener(ADSMSListener listener) | Définir un écouteur d'évènement pour être notifié de la réussite ou de l'échec de l'envoi du SMS |
 | send() | Envoyer le SMS |
 
 # Interface
