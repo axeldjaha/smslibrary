@@ -40,7 +40,7 @@ Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
 | send() | Envoyer le SMS |
 
 # Interface
-Pour être notifié de la réussite ou de l'échec de l'envoi, implémenter ADSMSListener
+Pour être notifié de la réussite ou de l'échec de l'envoi du SMS, implémenter ADSMSListener
 
 | Méthodes à implémenter  | Description |
 | --------------------------------- | ----------- |
