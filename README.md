@@ -8,9 +8,10 @@ compile 'axeldjaha.library:sms:1.3'
 Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
 
         /**
-         * On crée une instance de ADSMS à laquelle on attache le message à envoyer,
-         * le numéro du destinataire ainsi qu'un écouteur d'évènement (callback) qui nous notifie de la
-         * réussite ou de l'échec de l'envoi du SMS
+         * On crée une instance de ADSMS avec l'instance d'une activité,
+         * on attache le message à envoyer, ainsi que le numéro de téléphone du destinataire,
+         * on définit un écouteur d'évènement pour être notifié de la réussite ou de l'échec de l'envoi du SMS
+         * et on envoie le SMS ainsi créé
          */
         ADSMS.newInstance(ExempleActivity.this)
                 .bindMessage("Message à envoyer")
@@ -27,8 +28,6 @@ Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
                     }
                 })
                 .send();
-
-         
 
 # Fonctionnalités
 
