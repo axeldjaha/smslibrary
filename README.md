@@ -13,23 +13,22 @@ Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
          * réussite ou de l'échec de l'envoi du SMS
          */
         ADSMS.newInstance(ExempleActivity.this)
-                .bindMessage("Message test") //message à envoyer
-                .bindPhoneNumber("58000001") //numéro destinataire
-                .bindListener(new ADSMSListener() //écouteur d'évènement
-                {
+                .bindMessage("Message à envoyer")
+                .bindPhoneNumber("58000001")
+                .bindListener(new ADSMSListener(){
                     @Override
                     public void onADSmsSucces() {
                         //SMS envoyé, faire qqch
-                        Toast.makeText(ExempleActivity.this, "SMS envoyé", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
                     public void onADSmsFailed() {
                         //SMS non envoyé, faire qqch
-                        Toast.makeText(ExempleActivity.this, "Echec de l'envoi", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .send();
+
+         
 
 # Fonctionnalités
 
