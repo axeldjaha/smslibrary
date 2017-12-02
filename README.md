@@ -33,10 +33,10 @@ Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
 
 | Méthodes applicables à ADSMS  | Description |
 | --------------------------------- | ----------- |
-| bindListener(ADSMSListener listener) | Définir un écouteur d'évènement pour l'envoi du SMS |
+| newInstance(android.support.v7.app.AppCompatActivity activity) | Créer l'instance de ADSMS qui permettra d'envoyer un SMS |
 | bindMessage(java.lang.String message) | Définir le message à envoyer |
 | bindPhoneNumber(java.lang.String phoneNumber) | Définir le numéro destinataire du SMS à envoyer |
-| newInstance(android.support.v7.app.AppCompatActivity activity) | Créer l'instance de ADSMS qui permettra d'envoyer un SMS |
+| bindListener(ADSMSListener listener) | Définir un écouteur d'évènement pour l'envoi du SMS |
 | send() | Envoyer le SMS |
 
 # Interface
