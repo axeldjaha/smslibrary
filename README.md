@@ -3,7 +3,7 @@ Les Classes et interfaces de toute librairie 'axeldjaha' commencent toujours par
 # Description
 Librairie pour envoyer des SMS simplement.
 # Gradle
-compile 'axeldjaha.library:sms:1.2'
+compile 'axeldjaha.library:sms:1.3'
 # Exemple d'utilisation
 Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
 
