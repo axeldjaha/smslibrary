@@ -33,7 +33,7 @@ Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
 
 # Fonctionnalités
 
-        | Méthodes applicables à ADSMS  | Description |
+| Méthodes applicables à ADSMS  | Description |
 | --------------------------------- | ----------- |
 | bindListener(ADSMSListener listener) | Définir un écouteur d'évènement pour l'envoi du SMS |
 | bindMessage(java.lang.String message) | Définir le message à envoyer |
@@ -44,7 +44,8 @@ Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
 # Interface
 Pour être notifié de la réussite ou de l'échec de l'envoi, implémenter ADSMSListener
 
-        | Méthodes à implémenter  | Description |
+| Méthodes à implémenter  | Description |
 | --------------------------------- | ----------- |
 | onADSmsFailed() | Appelé lorsque l'envoi a échoué |
 | onADSmsSucces() | Appelé lorsque le SMS est envoyé |
+
