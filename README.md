@@ -5,7 +5,6 @@ Librairie pour envoyer des SMS simplement.
 # Gradle
 compile 'axeldjaha.library:sms:1.3'
 # Exemple d'utilisation
-Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
 
         /**
          * On crée une instance de ADSMS avec l'instance d'une activité,
