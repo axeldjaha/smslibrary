@@ -4,7 +4,7 @@ Les Classes et interfaces de toute librairie 'axeldjaha' commencent toujours par
 Librairie pour envoyer des SMS simplement.
 # Gradle
 compile 'axeldjaha.library:sms:1.2'
-# Usage
+# Exemple d'utilisation
 Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
 
         /**
@@ -30,3 +30,21 @@ Envoyer un SMS et gérer la réussite ou l'échec de l'envoi est très simple:
                     }
                 })
                 .send();
+
+# Fonctionnalités
+
+        | Méthodes applicables à ADSMS  | Description |
+| --------------------------------- | ----------- |
+| bindListener(ADSMSListener listener) | Définir un écouteur d'évènement pour l'envoi du SMS |
+| bindMessage(java.lang.String message) | Définir le message à envoyer |
+| bindPhoneNumber(java.lang.String phoneNumber) | Définir le numéro destinataire du SMS à envoyer |
+| newInstance(android.support.v7.app.AppCompatActivity activity) | Créer l'instance de ADSMS qui permettra d'envoyer un SMS |
+| send() | Envoyer le SMS |
+
+# Interface
+Pour être notifié de la réussite ou de l'échec de l'envoi, implémenter ADSMSListener
+
+        | Méthodes à implémenter  | Description |
+| --------------------------------- | ----------- |
+| onADSmsFailed() | Appelé lorsque l'envoi a échoué |
+| onADSmsSucces() | Appelé lorsque le SMS est envoyé |
